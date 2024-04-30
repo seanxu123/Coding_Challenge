@@ -18,7 +18,7 @@ export default function Auth() {
 
     if (username.length === 0 || secret.length === 0) return
 
-    const apiKey = process.env.API_KEY
+    const apiKey = process.env.REACT_APP_API_KEY
 
     axios.put(
       'https://api.chatengine.io/users/',
